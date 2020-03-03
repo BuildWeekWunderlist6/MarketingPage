@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wunderlist</title>
+    <script src="https://kit.fontawesome.com/21798826ba.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -11,10 +13,13 @@
     <div class="container">
     <!-- bav bar -->
         <nav>
+            <div class="logo">
+                <a href="index.html">Wunderlist</a>
+            </div>
             <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Features</a>
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="#features">Features</a>
                 <a href="#">Contact</a>
             </div>
             <!-- log in -->
@@ -24,24 +29,17 @@
             </div>
         </nav>
         <div class="home">
+            <!-- banner -->
             <header>
-                <!-- logo -->
-                <div class="logo">
-                    <h1>Wunder</h1>
-                    <h1>list<span><div class="squareOfLogo"></div></span></h1>
+                <div class="banner">
+                    <div class="video-container">
+                        <video autoplay muted loop id="video">
+                            <source src="MP4/Agile.mp4" type="video/mp4" />
+                            <!-- <source src="OGV/Agile.ogv" type="video/ogv" /> -->
+                        </video>
+                    </div>
                 </div>
             </header>
-            <div class="sub-logo">
-                <h5>Lorem ips sunt</h5>
-            </div>
-            <!-- Log in
-            <div class="user-img">
-                <img src="img/user-img.png" alt="user-image">
-                <h4><a href="#">Log In</a> or <a href="#">Sign Up</a></h4>
-            </div> -->
-            <!-- banner -->
-            <div class="banner">
-            </div>
             <!-- content -->
             <div class="content">
                 <div class="quote">
@@ -51,10 +49,9 @@
                         totam quo ad rem beatae libero autem dolores aspernatur delectus
                         quis labore officia tenetur?
                     </p>
-                    <button>contact me</button>
                 </div>
                 <!-- features -->
-                <h3>Features</h3>
+                <h3 id="features">Features</h3>
                 <div class="features">
                     <div class="col">
                         <div class="rowImg"></div>
@@ -99,8 +96,8 @@
             </div>
         </div>
         <footer>
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About Us</a>
             <a href="#">Features</a>
             <a href="#">Contact</a>
             <p>© 2020 by bw_wunderlist_6</p>

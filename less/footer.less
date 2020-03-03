@@ -1,0 +1,44 @@
+// .footer {
+//   width: 100%;
+//   border-top: 2px dashed silver;
+//   background: @sandy-beach;
+  
+//   p {
+//     text-align: center;
+//     color: @font-color;
+//     font-size: 1.6rem;
+//     padding: 20px;
+//   }
+// }
+footer{
+  margin-top: 20px;
+  padding: 0 50px;
+  width: 100%;
+  background-color: rgba(9, 75, 114, 0.789);
+  height: 40px;
+  .df(space-between, center);
+  @media @phone{
+    justify-content: center;
+  }
+  a{
+    width: 10%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.851);
+    transition-duration: .3s;
+    &:hover{
+      color: black;
+    }
+    @media @phone{
+      display: none;
+    }
+    @media @tablet{
+      font-size: 1rem;
+    }
+  }
+  p{
+    padding: 0;
+    color: rgba(255, 255, 255, 0.851);
+  }
+}

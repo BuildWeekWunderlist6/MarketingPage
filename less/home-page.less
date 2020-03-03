@@ -1,0 +1,250 @@
+.home {
+  header {
+    // border: 1px solid green;
+    .df(center, center);
+    margin-top: 70px;
+    @media @phone{
+      margin-top: 50px;
+    }
+    .logo {
+      display: flex;
+      flex-wrap: wrap;
+      .squareOfLogo {
+        height: 1rem;
+        width: 57.33px;
+        background-color: rgb(46, 105, 143);
+      }
+    } //logo
+  } //header
+  .sub-logo {
+    margin-bottom: 70px;
+    h5 {
+      text-align: center;
+      padding-right: 70px;
+    }
+  }
+
+  .banner {
+    height: 500px;
+    background-color: @theme;
+    margin-top: 20px;
+    @media @phone{
+      width: 100%;
+    }
+  }
+  .content {
+    .quote {
+      margin: 60px 170px;
+      line-height: 30px;
+      text-align: center;
+      @media @phone{
+        margin: 50px 20px;
+      }
+      @media @tablet{
+        margin: 50px 100px;
+      }
+    }
+    h3{
+      text-align: center;
+    }
+    .features {
+      .df(space-between, "");
+      padding: 20px 0;
+      @media @phone{
+        flex-direction: column;
+      }
+      @media @tablet{
+        justify-content: space-around;
+      }
+      .col{
+        @media @phone{
+          width: 100%;
+          height: 200px;
+          flex-direction: row;
+          margin: 10px 0;
+        }
+        .df(space-between,"");
+        flex-direction: column;
+        height: 600px;
+        width: 30%;
+        box-shadow: 2px 2px 10px #a1a1a1b4;
+
+        .rowImg{
+          background-color: @theme;
+          flex:1;
+          // @media @phone{
+          //   display: none;
+          // }
+        }
+        .row{
+          flex:2;
+          .df(center,flex-start);
+          p{
+            padding: 15px;
+          }
+        }
+      }
+    }
+  }
+} //home
+
+// .home {
+//   header {
+//     border-bottom: @bb;
+//     .banner{
+//       height: 250px;
+//       width: 100%;
+//       background-image: url(../img/fun-bus.jpg);
+//       background-size: cover;
+
+//       @media @phone {
+//         height: 100px;
+//       }
+//     }
+//     h2 {
+//       padding-top: 15px;
+//     }
+//   }
+
+//   .content-section {
+//     margin: 30px 0;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+
+//     @media @phone {
+//       flex-direction: column;
+//     }
+
+//     .text-content {
+//       width: 48%;
+//       padding-right: 1%;
+
+//       @media @phone {
+//         width: 100%;
+//       }
+
+//     }
+
+//     .img-content {
+//       width: 48%;
+//       padding-left: 1%;
+
+//       @media @phone {
+//         width: 100%;
+//       }
+
+//       img {
+//         border-radius: 10px;
+//       }
+
+//     }
+//   }
+
+//   .inverse-content {
+//     padding-bottom: 30px;
+//     border-bottom: 2px dashed @navigation-border;
+//     @media @phone {
+//       flex-direction: column-reverse;
+//     }
+
+//     .text-content {
+//       padding-left: 1%;
+//       padding-right: 0;
+//     }
+
+//     .img-content {
+//       padding-right: 1%;
+//       padding-left: 0;
+//     }
+//   }
+
+//   .content-destination {
+//     width: 75%;
+//     margin: 0 auto 30px;
+
+//     @media @phone {
+//       width: 100%;
+//     }
+
+//     img {
+//       border-radius: 10px;
+//     }
+//   }
+
+//   .content-pick {
+//     padding-top: 30px;
+//     border-top: 2px dashed @navigation-border;
+//     display: flex;
+//     justify-content: space-between;
+
+//     @media @phone {
+//       flex-direction: column;
+//       align-items: center;
+//     }
+
+//     @media @tablet {
+//       flex-direction: column;
+//       align-items: center;
+//     }
+
+//     .destination {
+//       width: 30%;
+//       margin-bottom: 30px;
+//       @media @phone {
+//         width: 90%;
+//         .df(center, center);
+//         flex-direction: column;
+//       }
+
+//       @media @tablet {
+//         width: 90%;
+//         .df(center, center);
+//         flex-direction: column;
+//       }
+
+//       .btn {
+//         .btn();
+
+//         @media @phone {
+//           .btn(@width: 90%)
+//         }
+//         @media @tablet {
+//           .btn(@width: 90%)
+//         }
+//       }
+//     }
+//   }
+
+//   .apply {
+//     // border: @give_border;
+//     border-top: @bb;
+//     padding-top: 4%;
+
+//     form {
+//       padding: 30px 0;
+//       .df(flex-start,"");
+//       flex-direction: column;
+
+//       label {
+//         margin: 10px 0;
+//         font-size: 1.5rem;
+//         input {
+//           width: 100%;
+//           margin: 5px 0;
+//         }
+//         #first-name, #last-name, #email, #number {
+//           height: 30px;
+//         }
+//         #packageA, #packageB, #packageC {
+//           width: 15px;
+//         }
+//         textarea {
+//           margin: 5px 0;
+//           width: 100%;
+//           height: 100px;
+//         }
+//       }
+//     }
+//   }
+// }// home

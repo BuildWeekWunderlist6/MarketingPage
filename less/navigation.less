@@ -1,0 +1,101 @@
+// Navigation Styles here
+
+nav {
+  .df(space-between,"");
+
+  @media @phone{
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu{
+    height: 50px;
+    width: 80%;
+    .df(space-around, center);
+
+    @media @phone{
+      width: 100%;
+    }
+    @media @tablet{
+      width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgba(6, 8, 65, 0.666);
+      font-size: 1.4rem;
+      transition-duration: .3s;
+
+      &:hover {
+        color: rgba(6, 8, 65);
+      }
+    }
+  }
+  .user-img {
+    height: 50px;
+    .df(flex-end, center);
+    @media @phone{
+      justify-content: center;
+    }
+    @media @tablet{
+      margin-right: 20px;
+    }
+    img {
+      width: 25px;
+    }
+    h4 {
+      margin: 0 16px;
+      padding: 0;
+      font-size: 12px;
+      a {
+        text-decoration: none;
+        color: rgba(128, 128, 128);
+        transition-duration: .3s;
+
+        &:hover {
+          color: rgba(6, 8, 65);
+        }
+      }
+    }
+  }
+}
+// .navigation {
+//     .df(space-between, "");
+//     padding: 0 20%;
+//     height: 65px;
+//     border-bottom: @bb;
+
+//     @media @phone {
+//         flex-direction: column;
+//         .df(space-around, center);
+//         height: 100px;
+//         padding: 0;
+//     }
+//     @media @tablet {
+//         flex-direction: column;
+//         .df(space-around, center);
+//         height: 100px;
+//         padding: 0;
+//     }
+
+//     .logo {
+//         .df(center, center);
+//         // @media @phone {
+//         //     margin: 10px 0;
+//         // }
+//     }
+
+//     .menu {
+//         .df(space-around, center);
+//         width: 50%;
+
+//         @media @phone {
+//             width: 100%;
+//         }
+
+//         a {
+//             font-size: 19px;
+//             color: #000;
+//             text-decoration: none;
+//         }
+//     }
+// }

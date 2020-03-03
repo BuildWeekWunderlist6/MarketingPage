@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(6, 8, 65, 0.83);
+
+  @media @phone {
+    width: 500px;
+  }
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Montserrat', cursive;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+
+h4 {
+  font-size: 1.8rem;
+  padding-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media @phone {
+    max-width: 500px;
+  }
+
+  @media @tablet {
+    max-width: 800px;
+  }
+}

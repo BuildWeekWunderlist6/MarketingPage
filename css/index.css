@@ -480,13 +480,19 @@ footer p {
   margin: 10px;
   width: 180px;
   font-family: 'Montserrat', sans-serif;
-  color: white;
   font-size: 1.5rem;
   transition-duration: 0.4s;
 }
+.home .content .quote button a {
+  text-decoration: none;
+  color: white;
+  transition-duration: 0.4s;
+}
+.home .content .quote button a:hover {
+  color: #acd6f4;
+}
 .home .content .quote button:hover {
   background-color: #fff;
-  color: #acd6f4;
 }
 .home .content .quote span {
   font-weight: bold;

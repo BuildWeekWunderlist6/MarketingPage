@@ -195,10 +195,16 @@
         flex-direction: column;
       }
       @media @tablet {
-        justify-content: space-around;
+        flex-direction: column;
       }
       .col {
         @media @phone {
+          width: 100%;
+          height: 400px;
+          flex-direction: row;
+          margin: 10px 0;
+        }
+        @media @tablet {
           width: 100%;
           height: 400px;
           flex-direction: row;

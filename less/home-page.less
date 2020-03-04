@@ -24,10 +24,11 @@
     } //banner
   } //header
   .about-content {
+    height: 100%vh;
     padding: 10%;
     margin-top: 20px;
-    background-color: @theme;
-    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1554189097-ffe88e998a2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80");
+    background-size: cover;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -92,12 +93,14 @@
 
 
       .aboutUs {
+        z-index: 2;
         width: 300px;
-        background-color: rgba(201, 240, 240, 0.55);
+        background-color: rgba(11, 78, 78, 0.55);
         height: 300px;
-        margin: -1px;
+        margin: 0;
         color: white;
         position: relative;
+        transition-duration: .3s;
         h3 {
           font-size: 50px;
           text-align: right;
@@ -107,14 +110,14 @@
           right: 0;
         }
         &:hover {
-          background-color: rgba(201, 240, 240, 0.803);
+          background-color: rgba(150, 205, 205, 0.748);
         }
       } //aboutUs
       .role {
         position: absolute;
         z-index: 1;
-        bottom: 2px;
-        margin: -1px;
+        bottom: 0px;
+        margin: 0px;
         background-color: rgba(255, 255, 255, 0.646);
         width: 300px;
         height: 70px;
@@ -134,12 +137,12 @@
         right: 0;
       }
       .role-left {
-        left: -21px;
+        left: -20px;
       }
       img {
         width: 300px;
-        opacity: 0.8;
-        margin: -1px;
+        opacity: 0.9;
+        margin: -1px 0;
         transition-duration: 0.3s;
         @media @phone {
           transition-duration: 0s;
@@ -152,6 +155,25 @@
       margin: 60px 170px;
       line-height: 30px;
       text-align: center;
+      button{
+        background-color: @theme;
+        border-radius: 5px;
+        height: 35px;
+        margin: 10px;
+        width: 180px;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-size: 1.5rem;
+        transition-duration: .4s;
+        &:hover{
+          background-color: #fff;
+          color: @theme;
+        }
+      }
+      span{
+        font-weight: bold;
+        color: rgb(92, 179, 201);
+      }
       @media @phone {
         margin: 50px 20px;
       }
@@ -162,9 +184,13 @@
     h3 {
       text-align: center;
     }
+    #features{
+        text-align: left;
+    }
     .features {
       .df(space-between, "");
       padding: 20px 0;
+
       @media @phone {
         flex-direction: column;
       }
@@ -174,7 +200,7 @@
       .col {
         @media @phone {
           width: 100%;
-          height: 200px;
+          height: 400px;
           flex-direction: row;
           margin: 10px 0;
         }
@@ -187,15 +213,81 @@
         .rowImg {
           background-color: @theme;
           flex: 1;
-          // @media @phone{
-          //   display: none;
-          // }
+        }
+        #left-img{
+          background-image: url("../img/left-img.jpg");
+          background-size: cover;
+        }
+        #middle-img{
+          background-image: url("../img/middle-img.jpg");
+          background-size: cover;
+        }
+        #right-img{
+          background-image: url("../img/right-img.jpg");
+          background-size: cover;
         }
         .row {
           flex: 2;
-          .df(center, flex-start);
+          .df(flex-start, center);
+          flex-direction: column;
+          padding-top: 6%;
+          h2{
+            font-size: 1.9rem;
+            font-weight: bold;
+          }
           p {
             padding: 15px;
+          }
+        }
+      }
+    }
+  }
+  .contact-page{
+    background-image: url("https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+    background-size: cover;
+    opacity: .9;
+    width: 100%;
+    margin: 1% 0;
+    .df(flex-end,center);
+    .form{
+      @media @phone{
+        width: 98%;
+      }
+      background-color: #fff;
+      opacity: .95;
+      height: 90vh;
+      width: 49%;
+      margin: 0 1%;
+      form{
+        .df(space-around, flex-start);
+        flex-direction: column;
+        margin-left: 3%;
+        label{
+          font-size: 1.5rem;
+          margin: 3% 1%;
+        }
+        input{
+          height: 30px;
+          width: 80%;
+          margin-left: 1%;
+        }
+        textarea{
+          margin-left: 1%;
+          width: 80%;
+        }
+        #submit{
+          background-color: rgb(29, 108, 109);
+          border-radius: 5px;
+          height: 35px;
+          margin: 1%;
+          width: 180px;
+          font-family: 'Montserrat', sans-serif;
+          color: white;
+          font-size: 1.5rem;
+          transition-duration: .2s;
+          &:hover{
+            background-color: #fff;
+            color: rgb(29, 108, 109);
           }
         }
       }

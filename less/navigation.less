@@ -12,6 +12,11 @@ nav {
       width: 100%;
       margin-top: 5%;
     }
+    @media @tablet{
+      justify-content: center;
+      width: 100%;
+      margin-top: 2%;
+    }
     a {
       text-decoration: none;
       color: rgb(16, 115, 172);
@@ -19,6 +24,10 @@ nav {
       }
     }
   @media @phone{
+    flex-direction: column;
+    width: 100%;
+  }
+  @media @tablet {
     flex-direction: column;
     width: 100%;
   }
@@ -51,6 +60,9 @@ nav {
     @media @phone{
       justify-content: center;
     }
+    @media @tablet{
+      justify-content: center;
+    }
     img {
       width: 25px;
     }
@@ -73,44 +85,3 @@ nav {
     }
   }
 }
-// .navigation {
-//     .df(space-between, "");
-//     padding: 0 20%;
-//     height: 65px;
-//     border-bottom: @bb;
-
-//     @media @phone {
-//         flex-direction: column;
-//         .df(space-around, center);
-//         height: 100px;
-//         padding: 0;
-//     }
-//     @media @tablet {
-//         flex-direction: column;
-//         .df(space-around, center);
-//         height: 100px;
-//         padding: 0;
-//     }
-
-//     .logo {
-//         .df(center, center);
-//         // @media @phone {
-//         //     margin: 10px 0;
-//         // }
-//     }
-
-//     .menu {
-//         .df(space-around, center);
-//         width: 50%;
-
-//         @media @phone {
-//             width: 100%;
-//         }
-
-//         a {
-//             font-size: 19px;
-//             color: #000;
-//             text-decoration: none;
-//         }
-//     }
-// }

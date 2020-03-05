@@ -203,12 +203,25 @@ nav .logo {
     margin-top: 5%;
   }
 }
+@media (max-width:800px) {
+  nav .logo {
+    justify-content: center;
+    width: 100%;
+    margin-top: 2%;
+  }
+}
 nav .logo a {
   text-decoration: none;
   color: #1073ac;
   font-family: 'Satisfy';
 }
 @media (max-width:500px) {
+  nav {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width:800px) {
   nav {
     flex-direction: column;
     width: 100%;
@@ -247,6 +260,11 @@ nav .user-img {
   align-items: center;
 }
 @media (max-width:500px) {
+  nav .user-img {
+    justify-content: center;
+  }
+}
+@media (max-width:800px) {
   nav .user-img {
     justify-content: center;
   }
@@ -336,7 +354,6 @@ footer p {
   }
 }
 .home .about-content {
-  height: 100vh;
   padding: 10%;
   margin-top: 20px;
   background-image: url("https://images.unsplash.com/photo-1554189097-ffe88e998a2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80");
@@ -474,7 +491,7 @@ footer p {
   text-align: center;
 }
 .home .content .quote button {
-  background-color: #acd6f4;
+  background-color: #1d6c6d;
   border-radius: 5px;
   height: 35px;
   margin: 10px;
@@ -492,7 +509,7 @@ footer p {
   background-color: #fff;
 }
 .home .content .quote button:hover a {
-  color: #acd6f4;
+  color: #1d6c6d;
 }
 .home .content .quote span {
   font-weight: bold;
@@ -514,6 +531,16 @@ footer p {
 .home .content #features {
   text-align: left;
 }
+@media (max-width:500px) {
+  .home .content #features {
+    margin-left: 20px;
+  }
+}
+@media (max-width:800px) {
+  .home .content #features {
+    margin-left: 20px;
+  }
+}
 .home .content .features {
   display: flex;
   justify-content: space-between;
@@ -522,12 +549,16 @@ footer p {
 }
 @media (max-width:500px) {
   .home .content .features {
+    padding: 0;
     flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width:800px) {
   .home .content .features {
+    padding: 0;
     flex-direction: column;
+    align-items: center;
   }
 }
 .home .content .features .col {
@@ -541,18 +572,18 @@ footer p {
 }
 @media (max-width:500px) {
   .home .content .features .col {
-    width: 100%;
+    width: 95%;
     height: 400px;
     flex-direction: row;
-    margin: 10px 0;
+    margin: 1.5% 0;
   }
 }
 @media (max-width:800px) {
   .home .content .features .col {
-    width: 100%;
+    width: 95%;
     height: 400px;
     flex-direction: row;
-    margin: 10px 0;
+    margin: 1.5% 0;
   }
 }
 .home .content .features .col .rowImg {

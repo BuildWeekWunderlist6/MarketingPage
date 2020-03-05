@@ -2,7 +2,7 @@
  One Paragraph of project description goes here
 
 ## What is this Wunderlist?
-##### Wunderlist is a task management application. It allows users to manage their tasks from a smartphone, tablet, computer and smartwatch.
+Wunderlist is a task management application. It allows users to manage their tasks from a smartphone, tablet, computer and smartwatch.
 
 ## How do I use this?
 * Download the files ⬇️
@@ -24,7 +24,7 @@
 ## Visuals
 
 ## Support
-##### Email: janecyyu@gmail.com
+Email: janecyyu@gmail.com
 
 ## Authors
-##### Jane Yu - UI developer
+Jane Yu - UI developer

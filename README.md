@@ -22,6 +22,7 @@ Wunderlist is a task management application. It allows users to manage their tas
 ![Wunderlist Logo](https://github.com/BuildWeekWunderlist6/MarketingPage/blob/master/img/logo.png)
 
 ## Visuals
+![Home page screenshot](https://github.com/BuildWeekWunderlist6/MarketingPage/blob/master/img/screenshot.png)
 
 ## Support
 Email: janecyyu@gmail.com

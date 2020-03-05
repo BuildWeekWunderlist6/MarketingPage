@@ -12,7 +12,8 @@ Built With
 * HTML5
 * CSS(LESS)
 
-Badges
+## Badges
+
 ![Wunderlist Logo](https://github.com/BuildWeekWunderlist6/MarketingPage/blob/master/img/logo.png)
 Authors
 Billie Thompson - Initial work - PurpleBooth

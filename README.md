@@ -1,5 +1,5 @@
 # MarketingPage
-##### One Paragraph of project description goes here
+ One Paragraph of project description goes here
 
 ## What is this Wunderlist?
 ##### Wunderlist is a task management application. It allows users to manage their tasks from a smartphone, tablet, computer and smartwatch.
